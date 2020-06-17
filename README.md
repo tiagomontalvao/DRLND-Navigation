@@ -48,3 +48,10 @@ All the training procedures are inside `Navigation.ipynb`. Run all the cells to 
 There are also two additional files:
 - `model.py`: defines the neural network architecture using PyTorch;
 - `dqn_agent.py`: implements DQN using the model above.
+
+
+### DQN Architecture
+
+The DQN agent has two neural networks (local and target networks) to estimate Q-values for actions in a particular state and its architecture is shown below:
+
+![Model Architecture](img/model_arch.png "Model Architecture")
