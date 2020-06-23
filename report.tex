@@ -86,7 +86,7 @@ The agent was implemented using a Deep Q-Network. To read the paper describing t
 \label{fig:dqn}
 \end{figure}
 
-Basically, the DQN consists of a combination of Q-Learning (Sarsamax), which is an off-policy model-free reinforcement learning algorithm, with neural networks, used for approximating the states, since the state space can be huge or sometimes infinite, as it is in this case, since the state gathers some continuous information (e.g. the agent's velocity) 
+Basically, the DQN consists of a combination of Q-Learning (Sarsamax), which is an off-policy model-free reinforcement learning algorithm, with neural networks, used for approximating the states, since the state space can be huge or sometimes infinite, as it is in this case, since the state gathers some continuous information (e.g. the agent's velocity)
 
 The DQN was then implemented with:
 
@@ -103,7 +103,7 @@ BUFFER_SIZE = int(1e5)  # replay buffer size
 BATCH_SIZE = 64         # minibatch size
 GAMMA = 1.00            # discount factor
 TAU = 1e-3              # for soft update of target parameters
-LR = 5e-4               # learning rate 
+LR = 5e-4               # learning rate
 UPDATE_EVERY = 4        # how often to update the network
 \end{code}
 
@@ -133,7 +133,7 @@ In the project notebook, there is a cell which executes a command that gives the
 
 The agent was able to solve the environment in only 848 episodes, and it took it about 32 minutes to train. All the details can be checked in the project notebook.
 
-The following image shows the individual episode score (in blue),the moving average of the last 100 episodes' scores (in orange), and the threshold of 13 for the moving average, so that the environment is considered solved.
+The following image shows the individual episode score (in blue), the moving average of the last 100 episodes' scores (in orange), and the threshold of 13 for the moving average (in red), so that the environment is considered solved.
 
 \begin{figure}[H]
 \centering
